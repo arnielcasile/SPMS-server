@@ -1,0 +1,23 @@
+{
+    "name": "yajra/laravel-pdo-via-oci8",
+    "description": "PDO userspace driver proxying calls to PHP OCI8 driver",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arjay Angeles",
+            "email": "aqangeles@gmail.com"
+        }
+    ],
+    "require-dev": {
+       "phpunit/phpunit": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yajra\\": "src/"
+        }
+    },
+    "scripts": {
+        "docker": "docker run -d -p 49160:22 -p 49161:1521 deepdiver/docker-oracle-xe-11g"
+    },
+    "minimum-stability": "stable"
+}
